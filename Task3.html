@@ -1,0 +1,74 @@
+<!DOCTYPE html>
+<html>
+<head>
+  <title>Task 3 - CSS Table and Form</title>
+  <link rel="stylesheet" href="task3css.css">
+</head>
+<body>
+  <h1 id="page-title">Student Grades</h1>
+  <table>
+    <thead>
+      <tr>
+        <th>Name</th>
+        <th>Subject</th>
+        <th>Grade</th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr>
+        <td>Aslan</td>
+        <td>Thermodynamics</td>
+        <td>70%</td>
+      </tr>
+      <tr class="highlight-row">
+        <td>Bayrzhan</td>
+        <td>Optics</td>
+        <td>95%</td>
+      </tr>
+      <tr>
+        <td>Ademi</td>
+        <td>Cosmology</td>
+        <td>85%</td>
+      </tr>
+      <tr>
+        <td>Dinara</td>
+        <td>Mechanics</td>
+        <td>60%</td>
+      </tr>
+    </tbody>
+  </table>
+  <form id="feedback-form">
+    <div class="form-group">
+        <h2>Feedback Form</h2>
+      <label for="name">Name:</label><br>
+      <input type="text" id="name" name="name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label><br>
+      <input type="email">
+    </div>
+    <div class="form-group">
+      <label for="role">Role:</label><br>
+      <select>
+        <option>Student</option>
+        <option>Teacher</option>
+        <option>Other</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label>Do you like this course?</label><br>
+      <input type="radio" >
+      <label for="yes">Yes</label>
+      <input type="radio" >
+      <label for="no">No</label>
+    </div>
+    <div class="form-group">
+      <label for="comments">Comments:</label><br>
+      <textarea  name="comments" ></textarea>
+    </div>
+    <div class="form-group">
+      <button type="submit">Submit</button>
+    </div>
+  </form>
+</body>
+</html>
